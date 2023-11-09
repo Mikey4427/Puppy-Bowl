@@ -3,7 +3,7 @@ const ul = document.querySelector(`ul`);
 const main = document.querySelector(`main`);
 const li = document.createElement(`li`);
 const cardOutline = document.createElement(`section`);
-cardOutline.setAttribute(`style`, `height: 50; width: 500; background-color:
+cardOutline.setAttribute(`style`, `height: 200; width: 500; background-color:
 blue; text-align: center;`);
 
 
