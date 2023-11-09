@@ -32,16 +32,16 @@ getAllPuppies()
 const renderAllPuppies = () => {
     // create loop to add all puppy names to list
 
-    for (i=0; i < state.puppyNames.length; i++){
+    for (let i=0; i < state.puppyNames.length; i++){
         
         const li = document.createElement(`li`);
         const newCardPicLi = document.createElement(`img`);
-        newCardPicLi.src = state.puppyNames[10].imageUrl;
+        newCardPicLi.src = state.puppyNames[i].imageUrl;
         li.innerText = state.puppyNames[i].name
         ul.appendChild(li)
         const puppyHeader = document.createElement(`h2`)
-        puppyHeader.innerText = state.puppyNames[1].name + ` ` + state.puppyNames[1].id + ` `
-         + state.puppyNames[1].breed + ` ` + state.puppyNames[1].teamId + newCardPicLi
+        puppyHeader.innerText = state.puppyNames[i].name + ` ` + state.puppyNames[i].id + ` `
+         + state.puppyNames[i].breed + ` ` + state.puppyNames[i].teamId + newCardPicLi
         
 
         // add event listener to list items to display puppy info
